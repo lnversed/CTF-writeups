@@ -1,0 +1,8 @@
+struct player {
+	+0   4
+	+4   4
+	+8   flag (0 initially)
+}
+
+goal:	get first element of player struct to be 0x1d
+	get local_aa4 = 0
